@@ -1,0 +1,24 @@
+.avatar {
+  &--unloaded {
+    display: none;
+  }
+
+  &-placeholder {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #ccc;
+
+    &__icon {
+      width: 50% !important;
+      height: 50% !important;
+    }
+  }
+
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  opacity: 1;
+  transition:  0.5s ease;
+}

@@ -1,0 +1,9 @@
+
+const BOOKING_STATUS = {
+  PENDING: 'PENDING',
+  ACCEPTED: 'ACCEPTED',
+  REJECTED: 'REJECTED',
+};
+
+export default BOOKING_STATUS;
+

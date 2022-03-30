@@ -1,0 +1,31 @@
+.progress-indicator {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.step {
+	display: flex;
+	flex-direction: row;
+
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+
+	&__text {
+		align-self: center;
+		font-weight: 600;
+	}
+
+	&__circle {
+		width: 30px;
+		height: 30px;
+		border: none;
+		display: block;
+		border-radius: 50%;
+		color: white;
+		text-align: center;
+		font-weight: bold;
+	}
+}

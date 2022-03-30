@@ -1,0 +1,57 @@
+.search-bar {
+  &__container {
+    max-width: 600px;
+    flex: 1 1 0;
+    margin-inline: 12px;
+  }
+
+  &__button {
+    border-radius: 5px;
+    margin-inline-start: -30px;
+    border-color: #fb5012;
+
+    &:hover {
+      background: #e24912; // darker
+      border-color: #fb5012;
+    }
+
+    &.btn {
+      background: #fb5012;
+      font-size: 14px !important;
+      line-height: 16px !important;
+      &:active {
+        background: #e24912!important;
+        box-shadow: 0 0 0 0.2rem #e24a128a !important;
+      }
+      &:focus {
+        box-shadow: 0 0 0 0.2rem #e24a128a;
+      }
+    }
+  }
+
+  &__input {
+    border-radius: 0;
+    border-color: #fb5012;
+
+    &:hover {
+      border-color: #fb5012;
+    }
+
+    &:focus,
+    &--landing:focus {
+      box-shadow: 0 0 0 0.2rem #e24a1249;
+      border-color: #e24912; // darker
+    }
+
+    &--landing {
+      border-radius: 0;
+      border-color: transparent;
+      box-shadow: -2px 2px 8px 0px rga(0, 0, 0, 0.3);
+
+      &:focus {
+        box-shadow: 0 0 0.2rem 0.2rem #e24a1249;
+        border-color: #fb5012;
+      }
+    }
+  }
+}

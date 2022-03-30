@@ -1,0 +1,11 @@
+#search-icon {
+  position: absolute;
+  width: 40px;
+  left: 48vw;
+  top: 13px;
+  transition: transform 0.5s;
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}

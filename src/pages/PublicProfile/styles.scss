@@ -1,0 +1,55 @@
+@import "../../sass/colors.scss";
+
+.public-profile {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    &_sidebar {
+        display: inline-block;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        align-self: center;
+        width: 320px;
+        border: 1px solid $lightGrayColor;
+        position: relative;
+        padding-top: 25px;
+        border-radius: 10px;
+        img {
+            position: absolute;
+            display: block;
+            height: 120px;
+            width: 120px;
+            overflow: hidden;
+            top: -60px;
+            border-radius: 100%;
+            overflow: hidden;
+            border-left: 4px solid $lightGrayColor;
+            border-right: 4px solid $lightGrayColor;
+            object-fit: cover;
+            margin-left: 100px;
+        }
+        .sidebar-text {
+            color: black;
+            &-details {
+                padding: 0.5rem 1.2rem;
+                text-align: left;
+                margin-top: 3rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    .about,
+    .experiences {
+        text-align: left;
+    }
+    .about-details {
+        min-height: 150px;
+        max-height: 260px;
+        overflow: scroll;
+    }
+    &_internal-link {
+        color: $textBlackColor !important;
+        text-decoration: underline !important;
+    }
+}

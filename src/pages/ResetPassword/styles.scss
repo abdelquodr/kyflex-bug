@@ -1,0 +1,19 @@
+.confirm-message, .success-reset {
+    background-color: #b4e4b4;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.unmatching-password {
+    color: red;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.failed-reset {
+    background-color: #ffaaa4;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 1.5rem;
+}

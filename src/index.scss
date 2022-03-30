@@ -1,0 +1,75 @@
+$mobile-break: 707px;
+$tablet-break: 1199px;
+$browser-break: 1200px;
+
+// header{background-color: red;}
+// .main-content{background-color: blue;}
+// footer{background-color: red}
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import './sass/colors.scss';
+@import './sass/animation.scss';
+@import './sass/custom-fonts.scss';
+@import './sass/common.scss';
+@import './sass/typography.scss';
+@import './sass/custom-bootstrap.scss';
+@import './sass/custom-components.scss';
+@import './sass/layouts.scss';
+@import './components/index.scss';
+@import './pages/index.scss';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  font-size: 18px;
+}
+
+footer {
+  // grid-area: footer;
+  margin-top: auto;
+  width: 100%;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+
+  #footer-body {
+    width: 80%;
+    padding: 3vh 0 3vh 0;
+    @media (max-width: $tablet-break) {
+      width: 100%;
+    }
+
+    #footer-body-main_logo {
+      width: 10%;
+      @media (max-width: $tablet-break) {
+        display: none;
+      }
+    }
+
+    .footer-body-nav_links {
+      width: 100%; //for mobile view
+      display: block;
+      margin-bottom: 2vh;
+
+      @media (min-width: $mobile-break) {
+        width: 50%; //for tablet view
+        display: inline-block;
+      }
+
+      @media (min-width: $browser-break) {
+        width: 20%; //for browser view
+        display: inline-block;
+      }
+
+      .nav-link {
+        color: #ffffff;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.what-is {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    background-image: url("../../assets/images/air-balloon.jpg");
+    background-size: cover;
+    background-position-x: calc(50%);
+    -webkit-animation: balloon-mover 53s infinite; /* Safari 4+ */
+    -moz-animation:    balloon-mover 53s infinite; /* Fx 5+ */
+    -o-animation:      balloon-mover 53s infinite; /* Opera 12+ */
+    animation:         balloon-mover 53s infinite; /* IE 10+, Fx 29+ */
+    color: #FFFFFF;
+}
+
+@keyframes balloon-mover{
+    0% {
+        background-position-y: bottom;
+    }
+    50% {
+        background-position-y: top;
+    }
+    100% {
+        background-position-y: bottom;
+    }
+}

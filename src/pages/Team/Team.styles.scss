@@ -1,0 +1,13 @@
+.team {
+  text-align: center;
+  margin: 2rem auto;
+  &-content {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+  }
+  &-about { background: none; margin-bottom: 0;  padding: 0; }
+}
+
+

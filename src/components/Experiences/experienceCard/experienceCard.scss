@@ -1,0 +1,62 @@
+@import '../../../sass/colors.scss';
+
+.experience-block {
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: none;
+  width: 215px;
+  justify-content: center;
+  border: 0;
+  background-color: white;
+  padding: 0.1rem;
+
+  &_image {
+    border-radius: 0;
+  }
+
+  &__title {
+    font-size: 1em;
+    line-height: 1.25em;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__text {
+    font-size: 1em;
+    margin-bottom: 0.5rem;
+    font-weight: 400px;
+    &__location {
+      font-size: 1rem;
+      color: gray;
+      font-weight: normal;
+    }
+  }
+
+  &_info {
+    padding: 0.5rem 0;
+  }
+
+  &:hover {
+    // box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    cursor: unset;
+  }
+}
+.carouselBlock {
+  background-color: rgba(#ededed, 0.6);
+  border-radius: 8px;
+  img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    filter: brightness(0.9);
+    border-radius: 8px;
+  }
+  background-color: $lightGrayColor;
+}

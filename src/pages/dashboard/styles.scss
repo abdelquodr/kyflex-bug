@@ -1,0 +1,21 @@
+@import  "../../sass/colors.scss";
+
+.edit-icon, .close-icon {
+    cursor: pointer; 
+    font-size: 2rem;
+}
+
+.text-area {
+    width: 100%;
+}
+.profile-title {
+    display: inline-flex;
+    text-align: center; 
+    justify-content: center;
+}
+
+.field-error, .MuiFormHelperText-root.Mui-error {
+    color: red;
+    font-size: 0.8rem;
+    font-weight: bold;
+}

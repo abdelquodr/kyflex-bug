@@ -1,0 +1,67 @@
+@media (min-width: 700px) {  
+  .newheader {
+    transition: opacity 0.4s;
+    transition-timing-function: ease-in-out;
+    &__brand {
+      &-logo {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    
+    &--main-bg {
+      background-color: white;
+    }
+    
+    &__search {
+      transition: opacity 340ms;
+      opacity: 0;
+      
+      &--visible {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.newheader {
+  transition: opacity 0.4s;
+  transition-timing-function: ease-in-out;
+  
+  &__brand {
+    &-logo {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  &--main-bg {
+    background-color: white;
+  }
+  
+  &__search {
+    transition: opacity 340ms;
+    opacity: 0;
+    
+    &--visible {
+      opacity: 1;
+    }
+  }
+}
+.right-border {
+  display: inline-block;
+  &-bar {
+    display: inline-block;
+    border-right: 1px solid red;
+  }
+}
+
+
+#dropdown-search-bar {
+  position: fixed;
+  top: -7;
+  left: 0;
+  right: 0;
+  z-index: 1029; // 1030 is the rest of the bar is, 1029 allows 
+  background-color: white;
+}

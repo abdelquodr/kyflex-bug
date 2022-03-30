@@ -1,0 +1,16 @@
+.link {
+  text-decoration: none;
+  color: $text-color;
+  margin: 0 8px;
+
+  font-size: 1em;
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $link-color-active;
+    text-decoration: underline;
+  }
+}

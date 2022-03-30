@@ -1,0 +1,10 @@
+@import "../../sass/colors.scss";
+
+.positions-router {
+  h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-left: 5px solid $mainKyflexColor;
+    padding-left: 1vw;
+  }
+}

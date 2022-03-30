@@ -1,0 +1,16 @@
+@import '../../sass/colors.scss';
+
+.register {
+    &-title {
+        border-left: 8px solid $mainKyflexColor;
+        h1 {
+            margin-left: 1rem;
+        }
+    }
+    
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: $mainKyflexColor;
+    background-color: $mainKyflexColor;
+}

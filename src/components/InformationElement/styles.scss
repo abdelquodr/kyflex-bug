@@ -1,0 +1,24 @@
+@import '../../sass/colors.scss';
+
+.alertMsg {
+  width: 95%;
+  color: $red;
+  border: 2px solid red;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 4rem auto 4rem auto;
+  
+  .msg {
+    display: inline;
+  }
+  .danger-icon {
+    margin-right: 10px;
+    font-size: 2rem;
+    display: inline;
+  }
+  .children {
+    display: inline;
+    font-weight: 600;
+  }
+ 
+}

@@ -1,0 +1,27 @@
+@import "../../sass/colors.scss";
+
+.home {
+    &-popular_now,
+    &-categories {
+        margin: 1rem auto 2rem auto;
+        padding: 0;
+        h3 {
+            transition: padding-left 1s;
+        }
+        &:hover h3 {
+            border-left: 5px solid $secondaryKyflexColor;
+            padding-left: 1vw;
+        }
+    }
+    &-categories {
+        &-item {
+            display: inline-block;
+            width: 289px;
+            margin: 0.5rem 0.2rem;
+        }
+    }
+}
+
+.MuiPaginationItem-textPrimary.Mui-selected {
+    background-color: $mainKyflexColor !important;
+}

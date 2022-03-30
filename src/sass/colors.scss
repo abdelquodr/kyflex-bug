@@ -1,0 +1,44 @@
+//this is for filler or background color
+$buttonBackgroundColor: #41d368;
+$mainBlueColor: #1f9aec;
+$subBlueColor: #4183d3;
+$subGreyColor: #f5f5f5;
+$white: #ffffff;
+$mainKyflexColor: #fc781c;
+$secondaryKyflexColor: #fdbd2d;
+$darkMainKyFlexColor: #fb5012;
+$btnBgGray: #e7e7e7;
+$teamProfileColor: #CDD9B5;
+$teamQuotesColor: #f5f5f5;
+
+//this is for text color
+$textWhiteColor: #ffffff;
+$textBlackColor: #000000;
+$secondaryTextColor: #5b5b5b;
+$lightGrayColor: lightgray;
+$lightGreyColor: $lightGrayColor;
+$dangerColor: #EB251E;
+
+$text-color: #000000;
+$link-color-active: #505050;
+
+:export {
+  buttonBackgroundColor: $buttonBackgroundColor;
+  mainBlueColor: $mainBlueColor;
+  subBlueColor: $subBlueColor;
+  subGreyColor: $subGreyColor;
+  white: $white;
+  mainKyflexColor: $mainKyflexColor;
+  darkMainKyFlexColor: $darkMainKyFlexColor;
+  secondaryKyflexColor: $secondaryKyflexColor;
+  btnBgGray: $btnBgGray;
+
+  //this is for text color
+  textWhiteColor: $textWhiteColor;
+  textBlackColor: $textBlackColor;
+  textColor: $text-color;
+  linkColorActive: $link-color-active;
+  lightGray: $lightGrayColor;
+  lightGrey: $lightGrayColor;
+  dangerColor: $dangerColor;
+}

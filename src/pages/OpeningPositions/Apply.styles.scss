@@ -1,0 +1,26 @@
+label {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.file-label {
+  color: #2c9df2;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.file-label:hover {
+  text-decoration: underline;
+}
+
+.file-upload-input {
+  display: none;
+}
+
+.date-text {
+  display: inline; 
+  margin-right: 5px;
+}

@@ -1,0 +1,14 @@
+@import "../../sass/colors.scss";
+
+.role {
+  width: 60vw;
+  &-link {
+    color: black;
+    transition: color 1s;
+  }
+  &-link:hover{
+    color: $mainKyflexColor;
+    text-decoration: none;
+  }
+}
+

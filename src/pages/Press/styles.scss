@@ -1,0 +1,42 @@
+@import '../../sass/colors.scss';
+
+.press {
+  width: 100%;
+  .MuiGrid-item {
+    height: 100%;
+    padding: 0.2rem;
+  }
+  .post {
+    opacity: 0.8;
+    margin: 0 auto;
+    &-thumbnail {
+      padding-right: 0.5rem;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+      }
+    }
+
+    &-content {
+      color: $textBlackColor;
+      &-date,
+      &-desc {
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+        color: $secondaryTextColor;
+      }
+      @media (max-width: 960px) {
+        &-desc {
+          display: none !important;
+        }
+      }
+    }
+  }
+  .post:hover {
+    opacity: 1;
+    transition: ease-in-out 0.2s;
+  }
+  a:hover {text-decoration: none;}
+}

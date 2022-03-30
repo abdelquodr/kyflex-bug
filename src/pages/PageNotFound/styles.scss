@@ -1,0 +1,12 @@
+
+.page_not_found {
+    height: 80vh;
+    display: block;
+    margin: 0 auto;
+    &-content {
+        position: relative;
+        top: 30%;
+        text-align: center;
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,30 @@
+$primary-text-color: #FC781C;
+.site_map {
+    &-block {
+        margin: 1rem auto !important; 
+        min-width: 200px !important;
+        height: 100%;    
+        padding: 0.6rem;       
+    }
+    &-link, &-link a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: $primary-text-color;
+        ::after {
+            content: '\2192';
+            vertical-align: middle;
+            margin-left: 1rem;
+            
+        }     
+    }
+    &-link:hover {
+            transform: translateX(0.6rem);
+            transition: 0.2s ease; 
+    }
+    @media (max-width: 1279px) {
+        &-block {
+            background-color: rgb(245, 245, 245);
+            border-radius: 8px; 
+        } 
+    }
+}

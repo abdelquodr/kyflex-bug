@@ -1,0 +1,52 @@
+.horizontal-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    padding: 8px;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        flex: 1 1 auto;
+        min-width: 0;
+
+        padding: 0 4px;
+    }
+
+    &__image-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-grow: 0;
+        flex-shrink: 0;
+
+        padding: 0 4px;
+    }
+
+    &__content {
+        flex: 1 0 auto;
+        margin: 4px 0;
+    }
+
+    &__title {
+        flex-shrink: 1;
+        font-size: 24px;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+
+        &--bold {
+            font-weight: bold;
+        }
+
+        &--big {
+            font-size: 32px;
+        }
+    }
+}

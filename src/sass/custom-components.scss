@@ -1,0 +1,261 @@
+@import './colors.scss';
+
+//for overlay
+.overlay-fullscreen {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  padding: 5px;
+  overflow: auto;
+  text-align: center;
+}
+
+.review-block {
+  width: 30.3%;
+  overflow: auto;
+  margin: 1vh 1vw 1vh 1vw;
+  padding: 2vh 2vw 2vh 2vw;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  display: inline-block;
+  @media (max-width: $tablet-break) {
+    width: 100%;
+    display: block;
+  }
+
+  .review-block-body {
+    margin: 1vh 0 2vh 0;
+    height: 20vh;
+    overflow: auto;
+    @media (max-width: $tablet-break) {
+      height: 15vh;
+    }
+  }
+}
+
+.progress-block {
+  width: 47%;
+  margin: 1vh 1vw 1vh 1vw;
+  padding: 4vh 2vw 4vh 2vw;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  display: inline-block;
+  @media (max-width: $tablet-break) {
+    width: 100%;
+    display: block;
+  }
+
+  .progress-block-bar {
+    height: 3.5vh;
+    font-weight: bolder;
+    font-family: contentFont;
+    font-size: 1.3rem;
+  }
+}
+
+.booking-block {
+  @media (max-width: $mobile-break) {
+    display: block;
+  }
+
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+
+  width: auto;
+
+  margin: 1vh 8px;
+  padding: 1vh 1vw 1vh 1vw;
+
+  .booking-block-from {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 0;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    span,
+    span * {
+      color: $mainKyflexColor;
+    }
+
+    img {
+      width: 117px;
+      height: 117px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+      border-radius: 100%;
+    }
+  }
+
+  .booking-block-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      width: 100%;
+      text-align: left;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+    img {
+      width: 215px;
+    }
+  }
+
+  .booking-block-status {
+    text-align: center;
+    margin-top: 20px;
+    button {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      background: none;
+      border: none;
+      padding: 10px;
+      font-weight: 600;
+    }
+    hr {
+      display: inline;
+      border-right: 1px solid $lightGrayColor;
+      border-radius: 0;
+      margin: auto 8px;
+    }
+
+    div {
+      @media (max-width: $mobile-break) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .btn-review {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+#footer {
+  #footer-body .nav-link {
+    text-align: center;
+  }
+}
+
+#top-nav {
+  #brand-top {
+    font-family: sectionHeaderFont;
+    font-size: 1.6rem;
+    -webkit-animation: text-color-change 22s infinite; /* Safari 4+ */
+    -moz-animation: text-color-change 22s infinite; /* Fx 5+ */
+    -o-animation: text-color-change 22s infinite; /* Opera 12+ */
+    animation: text-color-change 22s infinite; /* IE 10+, Fx 29+ */
+
+    &:hover {
+      text-shadow: 1px 1px #6b3c00;
+    }
+  }
+
+  .nav-link {
+    @media (max-width: $tablet-break) {
+      color: $textBlackColor;
+    }
+  }
+}
+
+//Home Page Renewal
+
+.experience_block {
+  //Alistaire's work
+  display: inline-block;
+  width: 25%;
+  margin: 1vh 1vw 1vh 1vw;
+  @media (max-width: $tablet-break) {
+    width: 100%;
+  }
+
+  .experience_block-image {
+    width: 100%;
+    margin-bottom: 1vh;
+  }
+
+  .experience_block-info {
+    text-align: left;
+    @media (max-width: $tablet-break) {
+      text-align: center;
+    }
+  }
+}
+
+.experience-reviews-block {
+  display: inline-flex;
+  margin: 1vh auto 2rem auto;
+  width: 50%;
+  h4 {
+    margin-bottom: 0;
+  }
+  @media (max-width: $mobile-break) {
+    width: 100%;
+  }
+  .experience-reviews-pic {
+    margin-right: 0.7rem;
+
+    .cropped {
+      height: 40px;
+      width: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  .experience-reviews-body {
+    margin-right: 2rem;
+    .cropped-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      line-height: 1.5em;
+      min-height: 4.5em;
+      margin-bottom: 8px;
+    }
+    .full-text {
+      line-height: 1.5em;
+      min-height: 4.5em;
+      margin-bottom: 8px;
+      border-left: 2px solid lightgray;
+      padding: 8px;
+    }
+  }
+  .experience-reviews-body:hover {
+    opacity: 0.6;
+  }
+  .experience-reviews-body:hover {
+    cursor: pointer;
+  }
+  .experience-reviews-media {
+    display: block;
+    img {
+      width: auto;
+      height: 60px;
+      margin: 4px;
+    }
+    img:hover {
+      opacity: 0.8;
+    }
+  }
+}

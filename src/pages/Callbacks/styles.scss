@@ -1,0 +1,21 @@
+.loading {
+  display: block;
+  min-height: 50vw;
+  &-msg {
+    font-weight: 800px;
+    margin-top: 25%;
+    text-align: center;
+  }
+}
+
+.loginRoles {
+  display: block;
+  margin-top: 20%;
+  text-align: center;
+  * {
+    padding: 10px 0;
+  }
+  &-caption {
+    margin: 0 auto 20px auto;
+  }
+}
